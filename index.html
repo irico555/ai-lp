@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIプログラミング学習コミュニティ</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf8f2; /* Light Orange/Cream */
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+        }
+        .header-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        header {
+            background: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #D2691E;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #fdf8f2;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #D2691E; /* Chocolate */
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #FF7F50; /* Coral */
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #E56739; /* Darker Coral */
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .section:nth-child(odd) {
+            background-color: #fff;
+        }
+        .section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            color: #D2691E; /* Chocolate */
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            text-align: left;
+        }
+        .feature-item {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        .feature-item h3 {
+            font-size: 1.5rem;
+            margin-top: 0;
+            color: #c06014;
+        }
+        ul.recommend-list {
+            list-style: none;
+            padding: 0;
+            display: inline-block;
+            text-align: left;
+        }
+        ul.recommend-list li {
+            background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23FF7F50" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>') no-repeat left center;
+            padding-left: 35px;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        .testimonial {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            padding: 20px;
+            background: #fffaf5;
+            border-left: 4px solid #FF7F50;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        .faq-item {
+            max-width: 700px;
+            margin: 0 auto 20px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 20px;
+        }
+        .faq-item h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        footer {
+            background: #D2691E; /* Chocolate */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">コミュニティについて</a></li>
+                    <li><a href="#features">特長</a></li>
+                    <li><a href="#recommend">こんな方へ</a></li>
+                    <li><a href="#testimonials">参加者の声</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+            <img src="header-image.png" alt="AIプログラミング学習コミュニティ" class="header-image">
+            <h1>AIと共に未来を創るプログラミングコミュニティ</h1>
+            <p>未経験からでも、仲間と一緒にAI開発の最前線へ。</p>
+            <a href="https://discord.com/invite/CCuV6RNFPe" class="cta-button">今すぐDiscordに参加する</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" id="about">
+            <div class="container">
+                <h2>私たちのコミュニティについて</h2>
+                <p style="max-width: 700px; margin: 0 auto;">
+                    当コミュニティは、AI技術の学習と実践に特化したオンラインコミュニティです。最新の技術トレンドの共有、プロジェクトベースの学習、経験豊富なメンターからのサポートを通じて、あなたのスキルアップを全力で支援します。
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="features">
+            <div class="container">
+                <h2>コミュニティの特長</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h3>実践的なプロジェクト</h3>
+                        <p>実社会の問題を解決するAIプロジェクトに参加し、ポートフォリオにもなる実践的な開発経験を積むことができます。</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>質の高い学習コンテンツ</h3>
+                        <p>初心者から上級者まで、レベルに合わせた質の高い学習ロードマップや限定コンテンツを提供します。</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>頼れる仲間とメンター</h3>
+                        <p>同じ目標を持つ仲間と繋がり、モチベーションを高め合えます。現役エンジニアのメンターがあなたの疑問を解決します。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="recommend">
+            <div class="container">
+                <h2>こんな方におすすめ</h2>
+                <ul class="recommend-list">
+                    <li>AIや機械学習に興味があるが、何から始めればいいかわからない方</li>
+                    <li>独学でのプログラミング学習に限界を感じている方</li>
+                    <li>共に学び、成長できる仲間を見つけたい方</li>
+                    <li>実践的な開発経験を積んで、キャリアアップを目指したい方</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="testimonials">
+            <div class="container">
+                <h2>参加者の声</h2>
+                <div class="testimonial">
+                    <p>"一人では挫折しがちなAIの勉強も、ここにはいつでも質問できる仲間がいて心強いです。プロジェクトに参加して、自信がつきました！"</p>
+                    <cite>- T. Yamada (20代・学生)</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"非エンジニアからの転職を目指して参加しました。メンターの方々の丁寧な指導のおかげで、無事にWeb系企業への転職が決まりました。感謝しかありません。"</p>
+                    <cite>- S. Tanaka (30代・企画職)</cite>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="faq">
+            <div class="container">
+                <h2>よくある質問</h2>
+                <div class="faq-item">
+                    <h3>Q. プログラミング初心者でも参加できますか？</h3>
+                    <p>A. はい、大歓迎です！初心者向けの学習ロードマップやサポート体制が整っていますので、ご安心ください。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q. どんな技術が学べますか？</h3>
+                    <p>A. Pythonを基礎から学び、NumPy, Pandas, Scikit-learnなどのライブラリを使ったデータ分析、TensorFlowやPyTorchを用いた深層学習などを中心に学びます。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q. 料金はかかりますか？</h3>
+                    <p>A. 基本的なコミュニティへの参加は無料です。一部の特別なメンタリングや限定講座については、別途料金が発生する場合があります。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="cta">
+            <div class="container">
+                <h2>さあ、あなたもAI開発の世界へ</h2>
+                <p>一歩踏み出して、私たちと一緒に未来のテクノロジーを学び始めましょう。</p>
+                <a href="https://discord.com/invite/CCuV6RNFPe" class="cta-button">無料でDiscordコミュニティに参加</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AIプログラミング学習コミュニティ. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
